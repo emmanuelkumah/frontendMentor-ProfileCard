@@ -22,7 +22,7 @@ body {
 }
 
 main {
-  border: 1px solid red;
+  border-radius: 10px;
   width: 20vw;
   margin-top: 100px;
   background-color: white;
@@ -31,4 +31,33 @@ main {
   background-image: url(./images/bg-pattern-card.svg);
   background-size: contain;
   height: 20vh;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.profileImage {
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  max-width: 30%;
+  border: 5px solid white;
+}
+.card-background h1 {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--veryDarkSaturatedBlue);
+}
+.card-background p {
+  color: var(--veryDarkgrayishBlue);
+  font-weight: 400;
+  font-size: 0.7rem;
+  text-align: center;
+}
+.card-details {
+  display: flex;
+}
+.card-details h2 {
+  font-size: 0.7rem;
+}
+.card-details p {
+  font-size: 0.6rem;
 }
