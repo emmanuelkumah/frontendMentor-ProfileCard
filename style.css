@@ -19,7 +19,6 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--darkCyan);
-  /* position: relative; */
 }
 
 main {
@@ -29,11 +28,14 @@ main {
   margin-bottom: 100px;
   background-color: white;
 }
-.bg-pattern-top {
-  background-image: url(./images/bg-pattern-top.svg);
-  background-position: bottom 120px left -410px;
-  background-repeat: no-repeat;
+/* add background pattern top-bottom */
+.bg-pattern {
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-position: top -580px left -340px, top 330px left 565px;
+  background-repeat: no-repeat no-repeat;
 }
+/* add background pattern to card */
 .card-background {
   background-image: url(./images/bg-pattern-card.svg);
   background-size: contain;
