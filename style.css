@@ -122,6 +122,10 @@ hr {
     color: var(--veryDarkSaturatedBlue);
     text-align: center;
   }
+  .card-details_photos {
+    right: 70px;
+  }
+
   .card-details p {
     font-size: 0.6rem;
     padding-top: 5px;
