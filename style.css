@@ -20,66 +20,36 @@ body {
   align-items: center;
   background-color: var(--darkCyan);
 }
-
 main {
-  border-radius: 10px;
-  width: 26vw;
-  margin-top: 150px;
-  margin-bottom: 100px;
   background-color: white;
+  border-radius: 10px;
 }
-/* add background pattern top-bottom */
 .bg-pattern {
   background-image: url(./images/bg-pattern-top.svg),
     url(./images/bg-pattern-bottom.svg);
-  background-position: top -580px left -340px, top 330px left 565px;
   background-repeat: no-repeat no-repeat;
 }
-/* add background pattern to card */
 .card-background {
   background-image: url(./images/bg-pattern-card.svg);
   background-size: contain;
-  height: 22vh;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   position: relative;
 }
 .profileImage {
+  position: absolute;
   border-radius: 50%;
   display: block;
   margin: 0 auto;
   max-width: 30%;
-  border: 5px solid white;
-  position: absolute;
-  left: 110px;
-  top: 80px;
+  border: 5px white solid;
 }
 .card-background h1 {
-  text-align: center;
-  font-size: 1rem;
   color: var(--veryDarkSaturatedBlue);
+  text-align: center;
   position: absolute;
-  top: 190px;
-  left: 110px;
 }
-span {
-  color: var(--veryDarkgrayishBlue);
-  padding-left: 5px;
-  font-weight: 400;
-}
-.card-background p {
-  color: var(--veryDarkgrayishBlue);
-  font-weight: 400;
-  font-size: 0.8rem;
-  position: absolute;
-  top: 220px;
-  left: 140px;
-}
-.card-details {
-  display: flex;
-  height: 25vh;
-  position: relative;
-}
+
 hr {
   position: relative;
   top: 60px;
@@ -88,16 +58,6 @@ hr {
   background-color: var(--veryDarkgrayishBlue);
   opacity: 0.3;
   height: 1px;
-}
-.card-details h2 {
-  font-size: 1rem;
-  color: var(--veryDarkSaturatedBlue);
-  text-align: center;
-}
-.card-details p {
-  font-size: 0.6rem;
-  padding-top: 5px;
-  color: var(--veryDarkgrayishBlue);
 }
 .card-details_followers,
 .card-details_likes,
@@ -113,4 +73,110 @@ hr {
 }
 .card-details_photos {
   right: 50px;
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  main {
+    width: 26vw;
+    margin-top: 150px;
+    margin-bottom: 100px;
+  }
+  /* add background pattern top-bottom */
+  .bg-pattern {
+    background-position: top -580px left -340px, top 330px left 565px;
+  }
+  /* add background pattern to card */
+  .card-background {
+    height: 22vh;
+  }
+  .profileImage {
+    left: 110px;
+    top: 80px;
+  }
+  .card-background h1 {
+    font-size: 1rem;
+    top: 190px;
+    left: 110px;
+  }
+  span {
+    color: var(--veryDarkgrayishBlue);
+    padding-left: 5px;
+    font-weight: 400;
+  }
+  .card-background p {
+    color: var(--veryDarkgrayishBlue);
+    font-weight: 400;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 220px;
+    left: 140px;
+  }
+  .card-details {
+    display: flex;
+    height: 25vh;
+    position: relative;
+  }
+
+  .card-details h2 {
+    font-size: 1rem;
+    color: var(--veryDarkSaturatedBlue);
+    text-align: center;
+  }
+  .card-details p {
+    font-size: 0.6rem;
+    padding-top: 5px;
+    color: var(--veryDarkgrayishBlue);
+  }
+}
+
+/* smartphones (portrait and landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  main {
+    width: 85vw;
+    margin: 150px auto;
+  }
+  /* add background pattern top-bottom */
+  .bg-pattern {
+    background-position: top -571px left -733px, top 281px left 119px;
+  }
+  /* add background pattern to card */
+  .card-background {
+    height: 20vh;
+  }
+  .profileImage {
+    left: 110px;
+    top: 80px;
+  }
+  .card-background h1 {
+    font-size: 1.2rem;
+    top: 200px;
+    left: 90px;
+  }
+  span {
+    color: var(--veryDarkgrayishBlue);
+    padding-left: 5px;
+    font-weight: 400;
+  }
+  .card-background p {
+    color: var(--veryDarkgrayishBlue);
+    font-weight: 400;
+    font-size: 1rem;
+    position: absolute;
+    top: 230px;
+    left: 130px;
+  }
+  .card-details {
+    display: flex;
+    height: 25vh;
+    position: relative;
+  }
+  .card-details h2 {
+    font-size: 1.2rem;
+    color: var(--veryDarkSaturatedBlue);
+    text-align: center;
+  }
+  .card-details p {
+    font-size: 0.8rem;
+    color: var(--veryDarkgrayishBlue);
+  }
 }
